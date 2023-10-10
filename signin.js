@@ -1,12 +1,12 @@
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 
 const app = express();
 const port = process.env.PORT || 3000;
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 const db = mysql.createConnection({
   host: "localhost", // Sesuaikan dengan pengaturan MySQL Anda
@@ -38,4 +38,3 @@ app.post("/signin", (req, res) => {
 app.listen(port, () => {
   console.log(`Server berjalan di port ${port}`);
 });
-
