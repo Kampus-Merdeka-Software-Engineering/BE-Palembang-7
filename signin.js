@@ -10,8 +10,8 @@ const port = process.env.PORT || 3000;
 
 const db = mysql.createConnection({
   host: "localhost", // Sesuaikan dengan pengaturan MySQL Anda
-  user: "root", // Sesuaikan dengan pengaturan MySQL Anda
-  password: "", // Sesuaikan dengan pengaturan MySQL Anda
+  user: "root",
+  password: "",
   database: "sevencell", // Sesuaikan dengan nama database Anda
 });
 
