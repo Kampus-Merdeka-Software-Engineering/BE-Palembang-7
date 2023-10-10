@@ -9,10 +9,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const db = mysql.createConnection({
-  host: "localhost", // Sesuaikan dengan pengaturan MySQL Anda
+  host: "localhost",
   user: "root",
   password: "",
-  database: "sevencell", // Sesuaikan dengan nama database Anda
+  database: "sevencell",
 });
 
 db.connect((err) => {
